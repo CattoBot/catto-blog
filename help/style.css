@@ -1,0 +1,249 @@
+@import url('https://fonts.cdnfonts.com/css/whitney-2');
+
+* {
+    font-family: whitney, Arial;
+    outline: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/* --- DIVISIÓN EN COLUMNAS --- */
+
+.columns {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+
+
+
+/* --- COLUMNA IZQUIERDA --- */
+
+.columns>.index {
+    padding: 10px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 280px;
+    background-color: #9d00ff;
+    background: linear-gradient(to bottom right, #bb4eff, #6800a8);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.index * {
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.columns>.index>.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.columns>.index>.header .text {
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+
+.columns>.index p {
+    margin: 0px;
+    font-weight: bold;
+}
+
+.columns>.index>.header .title {
+    font-size: 28px;
+}
+
+.columns>.index>.header .subtitle {
+    font-size: 20px;
+}
+
+.columns>.index>.header svg {
+    fill: #fff;
+    min-height: 100px;
+    min-width: 100px;
+    height: 100px;
+    width: 100px;
+}
+
+.columns>.index>.menu>nav>ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: #fff;
+    gap: 15px;
+}
+
+.columns>.index>.menu>nav>ul>li {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 15px 5px;
+}
+
+.columns>.index>.menu>nav>ul>li>p {
+    text-decoration: none #fff;
+    padding: 5px;
+    cursor: default;
+    color: #fff;
+}
+
+.columns>.index>.menu>nav>ul>li:hover {
+    background-color: #fff3;
+    border-radius: 10px;
+}
+
+.columns>.index>.menu>nav>ul>li>ul {
+    list-style: none;
+    font-size: 16px;
+    opacity: .8;
+    padding: 0px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.columns>.index>.menu>nav>ul>li>ul>a>li {
+    width: 200px;
+}
+
+.columns>.index>.menu>nav>ul>li>ul>a {
+    text-decoration: none #fff;
+    padding: 5px;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.columns>.index>.menu>nav>ul>li>ul>a:hover {
+    text-decoration: underline;
+    transform: translateX(5px);
+}
+
+div.separator {
+    width: 75%;
+    background-color: #fff5;
+    min-height: 3px;
+    color: #fff;
+    position: relative;
+    left: 12.5%;
+    text-align: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin-top: 75px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+div.separator:hover {
+    background-color: #fff3;
+    width: 100%;
+    position: relative;
+    left: 0px;
+}
+
+
+/* --- COLUMNA DERECHA --- */
+
+.columns>.help {
+    position: absolute;
+    left: 300px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: #eee;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.help>h1 {
+    margin: 0px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    max-height: 50px;
+    font-size: 90px;
+    align-items: center;
+    color: #000;
+    padding-left: 20px;
+    background-color: #e5bbff;
+    background: linear-gradient(to right, #edd2ff, #e2b4ff, #edd2ff);
+    color: #cf81ff;
+    overflow-y: hidden;
+    transition: all 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    text-transform: uppercase;
+}
+
+.help>h1:not(:nth-child(1)) {
+    margin-top: 200px;
+}
+
+.help>h1:hover {
+    max-height: 100px;
+    color: #c15dff;
+}
+
+.help > h2 {
+    margin: 0px;
+    margin-top: 20px;
+    width: 20%;
+    position: relative;
+    left: -10px;
+    text-align: start;
+    padding: 10px 50px 10px 50px;
+    border-radius: 0px 40px 40px 0px;
+    color: #eee;
+    overflow-y: hidden;
+    font-size: 32px;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    background-color: #e5bbff;
+    transition: all 0.3s;
+    background: linear-gradient(to right, #c978ff, #c05bff, #c978ff);
+}
+
+.help > h2:hover {
+    left: 0px;
+}
+
+.help>div {
+    padding: 20px;
+}
+
+.help>div p {
+    max-width: 1000px;
+    text-align: justify;
+    line-height: 25px;
+}

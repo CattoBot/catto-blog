@@ -1,0 +1,392 @@
+{
+    "settings": [
+        {
+            "separator": false,
+            "disabled": false,
+            "id": "ayuda",
+            "title": "Ayuda",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2Zm-1 17v-2h2v2h-2Zm3.17-6.83.9-.92c.57-.57.93-1.37.93-2.25 0-2.21-1.79-4-4-4S8 6.79 8 9h2c0-1.1.9-2 2-2s2 .9 2 2c0 .55-.22 1.05-.59 1.41l-1.24 1.26C11.45 12.4 11 13.4 11 14.5v.5h2c0-1.5.45-2.1 1.17-2.83Z\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+            "separator": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "notificaciones",
+            "title": "Notificaciones",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M18 11v5l2 2v1H4v-1l2-2v-5c0-3.08 1.63-5.64 4.5-6.32V4c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v.68C16.36 5.36 18 7.93 18 11Zm-4 9a2 2 0 1 1-4 0h4Z\"clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "menciones",
+            "title": "Menciones",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10v1.43C22 15.4 20.47 17 18.5 17c-1.19 0-2.31-.58-2.96-1.47-.9.91-2.16 1.47-3.54 1.47-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5v1.43c0 .79.71 1.57 1.5 1.57s1.5-.78 1.5-1.57V12c0-4.34-3.66-8-8-8s-8 3.66-8 8 3.66 8 8 8h5v2h-5C6.48 22 2 17.52 2 12Zm7 0c0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3-3 1.34-3 3Z\"clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "advertencias",
+            "title": "Advertencias",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path d=\"M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2Zm0 14H5.17L4 17.17V4h16v12ZM11 5h2v6h-2V5Zm0 8h2v2h-2v-2Z\"></path></svg>"
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "anuncios",
+            "title": "Anuncios",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path d=\"M18 11v2h4v-2h-4Z\"></path><path d=\"M16 17.61c.96.71 2.21 1.65 3.2 2.39.4-.53.8-1.07 1.2-1.6-.99-.74-2.24-1.68-3.2-2.4-.4.54-.8 1.08-1.2 1.61Z\"></path><path d=\"M20.4 5.6c-.4-.53-.8-1.07-1.2-1.6-.99.74-2.24 1.68-3.2 2.4.4.53.8 1.07 1.2 1.6.96-.72 2.21-1.65 3.2-2.4Z\"></path><path d=\"M4 9c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h1v4h2v-4h1l5 3V6L8 9H4Zm5.03 1.71L11 9.53v4.94l-1.97-1.18-.48-.29H4v-2h4.55l.48-.29Z\"></path><path d=\"M15.5 12c0-1.33-.58-2.53-1.5-3.35v6.69c.92-.81 1.5-2.01 1.5-3.34Z\"></path></svg>"
+        },
+        {
+            "separator": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "perfil público",
+            "title": "Perfil público",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M14.82 3H19c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h4.18C9.6 1.84 10.7 1 12 1c1.3 0 2.4.84 2.82 2ZM13 4c0-.55-.45-1-1-1s-1 .45-1 1 .45 1 1 1 1-.45 1-1Zm-1 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3ZM6 17.6V19h12v-1.4c0-2-4-3.1-6-3.1s-6 1.1-6 3.1Z\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "credenciales",
+            "title": "Credenciales",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path d=\"M18 12h-4v1.5h4V12Z\"></path><path d=\"M18 15h-4v1.5h4V15Z\"></path><path d=\"M20 7h-5V4c0-1.1-.9-2-2-2h-2c-1.1 0-2 .9-2 2v3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2Zm-9-3h2v5h-2V4Zm9 16H4V9h5c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2h5v11Z\"></path><path d=\"M9 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z\"></path><path d=\"M11.08 16.18c-.64-.28-1.34-.43-2.08-.43s-1.44.15-2.08.43c-.56.24-.92.78-.92 1.39V18h6v-.43c0-.61-.36-1.15-.92-1.39Z\"></path></svg>"
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "bloqueos",
+            "title": "Bloqueos",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2ZM4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9A7.902 7.902 0 0 1 4 12Zm3.1 6.31A7.902 7.902 0 0 0 12 20c4.42 0 8-3.58 8-8 0-1.85-.63-3.55-1.69-4.9L7.1 18.31Z\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+            "separator": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "recordatorios",
+            "title": "Recordatorios",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path d=\"m22 5.79-4.6-3.86-1.29 1.53 4.6 3.86L22 5.79ZM7.88 3.46 6.6 1.93 2 5.78l1.29 1.53 4.59-3.85Zm4.62 4.61H11v6l4.75 2.85.75-1.23-4-2.37V8.07Zm-.5-4a9 9 0 0 0-9 9c0 4.97 4.02 9 9 9a9 9 0 0 0 0-18Zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7Z\"></path></svg>"
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "anclas",
+            "title": "Anclas",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path d=\"m17 15 1.55 1.55c-.96 1.69-3.33 3.04-5.55 3.37V11h3V9h-3V7.82C14.16 7.4 15 6.3 15 5c0-1.65-1.35-3-3-3S9 3.35 9 5c0 1.3.84 2.4 2 2.82V9H8v2h3v8.92c-2.22-.33-4.59-1.68-5.55-3.37L7 15l-4-3v3c0 3.88 4.92 7 9 7s9-3.12 9-7v-3l-4 3ZM12 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1Z\"></path></svg>"
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "música",
+            "title": "Música",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path d=\"M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6Z\"></path></svg>"
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "calendario",
+            "title": "Calendario",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M19 3h1c1.1 0 2 .9 2 2v16c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h1V1h2v2h10V1h2v2ZM4 21h16V8H4v13Z\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+            "separator": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "estadísticas",
+            "title": "Estadísticas",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M5 3h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2Zm2 14h2v-7H7v7Zm6 0h-2V7h2v10Zm2 0h2v-4h-2v4Z\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "economía",
+            "title": "Economía",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M21 18v1c0 1.1-.9 2-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14c1.1 0 2 .9 2 2v1h-9a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9Zm-9-2h10V8H12v8Zm2.5-4c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5Z\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+            "separator": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "contacto dev",
+            "title": "Contacto con el desarrollador",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path d=\"M11 14H9a9 9 0 0 1 9-9v2c-3.87 0-7 3.13-7 7Zm7-3V9c-2.76 0-5 2.24-5 5h2c0-1.66 1.34-3 3-3ZM7 4c0-1.11-.89-2-2-2-1.11 0-2 .89-2 2 0 1.11.89 2 2 2 1.11 0 2-.89 2-2Zm4.45.5h-2A2.99 2.99 0 0 1 6.5 7h-3C2.67 7 2 7.67 2 8.5V11h6V8.74a4.97 4.97 0 0 0 3.45-4.24ZM19 17c1.11 0 2-.89 2-2 0-1.11-.89-2-2-2-1.11 0-2 .89-2 2 0 1.11.89 2 2 2Zm1.5 1h-3a2.99 2.99 0 0 1-2.95-2.5h-2A4.97 4.97 0 0 0 16 19.74V22h6v-2.5c0-.83-.67-1.5-1.5-1.5Z\"></path></svg>"
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "bug report",
+            "title": "Bug report",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\"d=\"M20 8h-2.81a5.983 5.983 0 0 0-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5c-.49 0-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8Zm-6 8h-4v-2h4v2Zm-4-4h4v-2h-4v2Z\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+            "separator": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "comprar premium",
+            "title": "Comprar premium",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M16 6V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H2v13c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6h-6Zm-6-2h4v2h-4V4ZM9 9v9l7.5-5L9 9Z\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "regalar premium",
+            "title": "Regalar premium",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 0 0-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2Zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1Zm-5 1c0-.55-.45-1-1-1s-1 .45-1 1 .45 1 1 1 1-.45 1-1ZM4 19v-2h16v2H4ZM4 8v6h16V8h-5.08L17 10.83 15.38 12 12 7.4 8.62 12 7 10.83 9.08 8H4Z\" clip-rule=\"evenodd\"></path></svg>"
+        },
+        {
+            "separator": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "soporte",
+            "title": "Soporte",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M11.5 2C6.81 2 3 5.81 3 10.5c0 4.69 3.81 8.5 8.5 8.5h.5v3c4.86-2.34 8-7 8-11.5C20 5.81 16.19 2 11.5 2Zm-1 14.5v-2h2v2h-2Zm1.77-6.678c-.828.635-1.77 1.357-1.77 3.178h2c0-1.095.711-1.717 1.44-2.354.77-.673 1.56-1.363 1.56-2.646 0-2.21-1.79-4-4-4s-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 .88-.58 1.324-1.23 1.822Z\" clip-rule=\"evenodd\"></path></svg>"
+        }
+    ],
+    "server": [
+        {
+            "separator": false,
+            "disabled": false,
+            "id": "ayuda",
+            "title": "Ayuda",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2Zm-1 17v-2h2v2h-2Zm3.17-6.83.9-.92c.57-.57.93-1.37.93-2.25 0-2.21-1.79-4-4-4S8 6.79 8 9h2c0-1.1.9-2 2-2s2 .9 2 2c0 .55-.22 1.05-.59 1.41l-1.24 1.26C11.45 12.4 11 13.4 11 14.5v.5h2c0-1.5.45-2.1 1.17-2.83Z\" clip-rule=\"evenodd\"></path></svg>",
+            "admin": false
+        },
+        {
+            "separator": true,
+            "admin": false
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "notificaciones",
+            "title": "Notificaciones",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M18 11v5l2 2v1H4v-1l2-2v-5c0-3.08 1.63-5.64 4.5-6.32V4c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v.68C16.36 5.36 18 7.93 18 11Zm-4 9a2 2 0 1 1-4 0h4Z\"clip-rule=\"evenodd\"></path></svg>",
+            "admin": false
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "menciones",
+            "title": "Menciones",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10v1.43C22 15.4 20.47 17 18.5 17c-1.19 0-2.31-.58-2.96-1.47-.9.91-2.16 1.47-3.54 1.47-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5v1.43c0 .79.71 1.57 1.5 1.57s1.5-.78 1.5-1.57V12c0-4.34-3.66-8-8-8s-8 3.66-8 8 3.66 8 8 8h5v2h-5C6.48 22 2 17.52 2 12Zm7 0c0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3-3 1.34-3 3Z\"clip-rule=\"evenodd\"></path></svg>",
+            "admin": false
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "advertencias",
+            "title": "Advertencias",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path d=\"M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2Zm0 14H5.17L4 17.17V4h16v12ZM11 5h2v6h-2V5Zm0 8h2v2h-2v-2Z\"></path></svg>",
+            "admin": false
+        },
+        {
+            "separator": true,
+            "admin": false
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "perfil público",
+            "title": "Perfil público",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M14.82 3H19c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h4.18C9.6 1.84 10.7 1 12 1c1.3 0 2.4.84 2.82 2ZM13 4c0-.55-.45-1-1-1s-1 .45-1 1 .45 1 1 1 1-.45 1-1Zm-1 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3ZM6 17.6V19h12v-1.4c0-2-4-3.1-6-3.1s-6 1.1-6 3.1Z\" clip-rule=\"evenodd\"></path></svg>",
+            "admin": false
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "credenciales",
+            "title": "Credenciales",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path d=\"M18 12h-4v1.5h4V12Z\"></path><path d=\"M18 15h-4v1.5h4V15Z\"></path><path d=\"M20 7h-5V4c0-1.1-.9-2-2-2h-2c-1.1 0-2 .9-2 2v3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2Zm-9-3h2v5h-2V4Zm9 16H4V9h5c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2h5v11Z\"></path><path d=\"M9 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z\"></path><path d=\"M11.08 16.18c-.64-.28-1.34-.43-2.08-.43s-1.44.15-2.08.43c-.56.24-.92.78-.92 1.39V18h6v-.43c0-.61-.36-1.15-.92-1.39Z\"></path></svg>",
+            "admin": false
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "mis tickets",
+            "title": "Mis tickets",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path d=\"M19 5v9h-5v5H5V5h14Zm0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h10l6-6V5c0-1.1-.9-2-2-2Zm-7 11H7v-2h5v2Zm5-4H7V8h10v2Z\"></path></svg>",
+            "admin": false
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "bloqueos",
+            "title": "Bloqueos",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2ZM4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9A7.902 7.902 0 0 1 4 12Zm3.1 6.31A7.902 7.902 0 0 0 12 20c4.42 0 8-3.58 8-8 0-1.85-.63-3.55-1.69-4.9L7.1 18.31Z\" clip-rule=\"evenodd\"></path></svg>",
+            "admin": false
+        },
+        {
+            "separator": true,
+            "admin": false
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "leaderboard",
+            "title": "Leaderboard",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path d=\"M16 11V3H8v6H2v12h20V11h-6Zm-6-6h4v14h-4V5Zm-6 6h4v8H4v-8Zm16 8h-4v-6h4v6Z\"></path></svg>",
+            "admin": false
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "text xp",
+            "title": "Text XP",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M4 2h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H6l-3.99 4V4c0-1.1.89-2 1.99-2Zm14 7H6v2h12V9Zm-4 5H6v-2h8v2ZM6 8h12V6H6v2Z\" clip-rule=\"evenodd\"></path></svg>",
+            "admin": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "vc xp",
+            "title": "Voice XP",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M14 5.29V3.23c4.01.91 7 4.49 7 8.77 0 4.28-2.99 7.86-7 8.77v-2.06c2.89-.86 5-3.54 5-6.71s-2.11-5.85-5-6.71ZM3 9v6h4l5 5V4L7 9H3Zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02Z\" clip-rule=\"evenodd\"></path></svg>",
+            "admin": true
+        },
+        {
+            "separator": true,
+            "admin": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "bienvenidas",
+            "title": "Bienvenidas",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path d=\"m19 9 1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9Z\"></path><path d=\"m19 15-1.25 2.75L15 19l2.75 1.25L19 23l1.25-2.75L23 19l-2.75-1.25L19 15Z\"></path><path d=\"M11.5 9.5 9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5Zm-1.51 3.49L9 15.17l-.99-2.18L5.83 12l2.18-.99L9 8.83l.99 2.18 2.18.99-2.18.99Z\"></path></svg>",
+            "admin": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "reaction roles",
+            "title": "Reaction roles",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path d=\"M15.5 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z\"></path><path d=\"M8.5 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z\"></path><path d=\"M12 18c2.28 0 4.22-1.66 5-4H7c.78 2.34 2.72 4 5 4Z\"></path><path d=\"M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8Z\"></path></svg>",
+            "admin": true
+        },
+        {
+            "separator": true,
+            "admin": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "moderacion",
+            "title": "Moderación",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"m3 5 9-4 9 4v6c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5Zm16 6.99h-7v-8.8L5 6.3V12h7v8.93c3.72-1.15 6.47-4.82 7-8.94Z\" clip-rule=\"evenodd\"></path></svg>",
+            "admin": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "staff",
+            "title": "Staff",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M2 12C2 6.47 6.47 2 12 2c5.52 0 10 4.48 10 10s-4.47 10-10 10S2 17.53 2 12Zm7.25-2.12c0-.92 1.84-1.38 2.75-1.38.91 0 2.75.47 2.75 1.38v4.62h-1.5V19h-2.5v-4.5h-1.5V9.88ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8Zm1.5-13.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z\" clip-rule=\"evenodd\"></path></svg>",
+            "admin": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "sanciones",
+            "title": "Sanciones",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"m17.98 6.66-2.83 2.83-5.66-5.66L12.32 1l5.66 5.66ZM8.07 5.24 5.24 8.07l14.14 14.14 2.83-2.83L8.07 5.24ZM13 21H1v2h12v-2Zm-3.51-5.86L3.83 9.48 1 12.31l5.66 5.66 2.83-2.83Z\" clip-rule=\"evenodd\"></path></svg>",
+            "admin": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "seguridad",
+            "title": "Seguridad",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M17.81 4.47c-.08 0-.16-.02-.23-.06C15.66 3.42 14 3 12.01 3c-1.98 0-3.86.47-5.57 1.41-.24.13-.54.04-.68-.2a.506.506 0 0 1 .2-.68C7.82 2.52 9.86 2 12.01 2c2.13 0 3.99.47 6.03 1.52.25.13.34.43.21.67a.49.49 0 0 1-.44.28ZM3.5 9.72a.499.499 0 0 1-.41-.79c.99-1.4 2.25-2.5 3.75-3.27C9.98 4.04 14 4.03 17.15 5.65c1.5.77 2.76 1.86 3.75 3.25a.5.5 0 0 1-.12.7c-.23.16-.54.11-.7-.12a9.387 9.387 0 0 0-3.39-2.94c-2.87-1.47-6.54-1.47-9.4.01-1.36.7-2.5 1.7-3.4 2.96-.08.14-.23.21-.39.21Zm5.9 11.92c.09.1.22.15.35.15.13 0 .26-.05.37-.15.19-.2.19-.51 0-.71-.77-.78-1.21-1.27-1.85-2.42-.61-1.08-.93-2.41-.93-3.85 0-2.42 2.09-4.39 4.66-4.39 2.57 0 4.66 1.97 4.66 4.39 0 .28.22.5.5.5s.5-.22.5-.5c0-2.97-2.54-5.39-5.66-5.39s-5.66 2.42-5.66 5.39c0 1.61.36 3.11 1.05 4.34.67 1.21 1.14 1.77 2.01 2.64Zm7.52-1.7c-1.19 0-2.24-.3-3.1-.89-1.49-1.01-2.38-2.65-2.38-4.39 0-.28.22-.5.5-.5s.5.22.5.5c0 1.41.72 2.74 1.94 3.56.71.48 1.54.71 2.54.71.24 0 .64-.03 1.04-.1.27-.05.53.13.58.41.05.27-.13.53-.41.58-.57.11-1.07.12-1.21.12Zm-2.14 2.04c.04.01.09.02.13.02.21 0 .42-.15.47-.38a.496.496 0 0 0-.35-.61c-1.41-.39-2.32-.91-3.27-1.85a6.298 6.298 0 0 1-1.87-4.51c0-1.07.93-1.94 2.08-1.94s2.08.87 2.08 1.94c0 1.62 1.38 2.94 3.08 2.94 1.7 0 3.08-1.32 3.08-2.94 0-4.32-3.7-7.83-8.25-7.83-3.23 0-6.18 1.81-7.51 4.6-.45.95-.68 2.04-.68 3.24 0 1.35.24 2.65.73 3.96.09.25.38.39.64.29.26-.09.39-.38.29-.64-.6-1.6-.67-2.83-.67-3.61 0-1.04.2-1.99.59-2.8 1.17-2.45 3.77-4.03 6.61-4.03 4 0 7.25 3.06 7.25 6.83 0 1.07-.93 1.94-2.08 1.94s-2.08-.87-2.08-1.94c0-1.62-1.38-2.94-3.08-2.94-1.7 0-3.08 1.32-3.08 2.94 0 1.98.77 3.83 2.17 5.22 1.09 1.07 2.13 1.66 3.72 2.1Z\" clip-rule=\"evenodd\"></path></svg>",
+            "admin": true
+        },
+        {
+            "separator": true,
+            "admin": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "tickets",
+            "title": "Tickets",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path d=\"M20.19 4H4c-1.1 0-1.99.9-1.99 2v4c1.1 0 1.99.9 1.99 2a2 2 0 0 1-2 2v4c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.81-2-1.81-2ZM20 18H4v-2.54c1.19-.69 2-1.99 2-3.46 0-1.48-.8-2.77-1.99-3.46L4 6h16v12ZM8.87\"></path></svg>",
+            "admin": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "logs",
+            "title": "Logs",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path d=\"M13.5 4h-4v4h4V4Z\"></path><path d=\"M7.5 16h-4v4h4v-4Z\"></path><path d=\"M7.5 10h-4v4h4v-4Z\"></path><path d=\"M7.5 4h-4v4h4V4Z\"></path><path d=\"M19.5 4h-4v4h4V4Z\"></path><path d=\"M10.5 17.86V20h2.1l5.98-5.97-2.12-2.12-5.96 5.95Z\"></path><path d=\"M13.5 12.03V10h-4v4h2.03l1.97-1.97Z\"></path><path d=\"m20.35 11.56-1.41-1.41c-.2-.2-.51-.2-.71 0l-1.06 1.06 2.12 2.12 1.06-1.06c.2-.2.2-.51 0-.71Z\"></path></svg>",
+            "admin": true
+        },
+        {
+            "separator": true,
+            "admin": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "economia",
+            "title": "Economía",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12Zm11.41 8v-1.91c1.74-.33 3.11-1.33 3.12-3.16 0-2.52-2.16-3.39-4.18-3.91-2.02-.52-2.67-1.07-2.67-1.91 0-.96.9-1.64 2.4-1.64 1.58 0 2.17.76 2.22 1.87h1.96c-.06-1.53-.99-2.94-2.85-3.39V4h-2.67v1.93c-1.72.37-3.11 1.49-3.11 3.21 0 2.05 1.7 3.07 4.18 3.67 2.23.53 2.67 1.31 2.67 2.14 0 .61-.44 1.59-2.4 1.59-1.83 0-2.55-.82-2.65-1.87H7.47c.11 1.94 1.56 3.04 3.27 3.4V20h2.67Z\" clip-rule=\"evenodd\"></path></svg>",
+            "admin": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "estadísticas",
+            "title": "Estadísticas",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path fill-rule=\"evenodd\" d=\"M10.6 5h2.8v14h-2.8V5ZM5 9.2h3V19H5V9.2ZM19 13h-2.8v6H19v-6Z\" clip-rule=\"evenodd\"></path></svg>",
+            "admin": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "sorteos",
+            "title": "Sorteos",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path d=\"m1.23 22.27 14-5-9-9-5 14Zm10.35-5.82-7.05 2.52 2.52-7.05 4.53 4.53Z\"></path><path d=\"m13.76 12.8 5.59-5.59a1.25 1.25 0 0 1 1.77 0l.59.59 1.06-1.06-.59-.59a2.758 2.758 0 0 0-3.89 0l-5.59 5.59 1.06 1.06Z\"></path><path d=\"m9.29 7.15-.59.59L9.76 8.8l.59-.59a2.758 2.758 0 0 0 0-3.89l-.59-.59L8.7 4.8l.59.59c.48.48.48 1.28 0 1.76Z\"></path><path d=\"m16.29 12.15-1.59 1.59 1.06 1.06 1.59-1.59a1.25 1.25 0 0 1 1.77 0l1.61 1.61 1.06-1.06-1.61-1.61a2.758 2.758 0 0 0-3.89 0Z\"></path><path d=\"M14.29 6.15 10.7 9.74l1.06 1.06 3.59-3.59a2.758 2.758 0 0 0 0-3.89l-1.59-1.59-1.06 1.06 1.59 1.59c.48.49.48 1.29 0 1.77Z\"></path></svg>",
+            "admin": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "música",
+            "title": "Música",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path d=\"M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6Z\"></path></svg>",
+            "admin": true
+        },
+        {
+            "separator": true,
+            "admin": true
+        },
+        {
+            "separator": false,
+            "disabled": true,
+            "id": "redes sociales",
+            "title": "Redes Sociales",
+            "svg": "<svg viewBox=\"0 0 24 24\"><path d=\"M12 18.5c.83 0 1.5-.67 1.5-1.5h-3c0 .83.67 1.5 1.5 1.5ZM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2Zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8Zm4-8.61c0-2.11-1.03-3.92-3-4.39v-.5c0-.57-.43-1-1-1-.57 0-1 .43-1 1V7c-1.97.47-3 2.27-3 4.39V14H7v2h10v-2h-1v-2.61ZM14 14h-4v-3c0-1.1.9-2 2-2s2 .9 2 2v3Z\"></path></svg>",
+            "admin": true
+        }
+    ],
+    "plantilla": {
+        "separator": false,
+        "disabled": true,
+        "id": "",
+        "title": "",
+        "svg": "",
+        "admin": true
+    }
+}
