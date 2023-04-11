@@ -1,0 +1,251 @@
+@import url('https://fonts.cdnfonts.com/css/whitney-2');
+@import url('https://fonts.cdnfonts.com/css/gg-sans-2');
+
+@font-face {
+    font-family: Ginto;
+    font-weight: 700;
+    src: url(https://cdn.jsdelivr.net/gh/ROMVoid95/DiscordFonts@master/Ginto-Nord/Ginto-Nord-700.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/ROMVoid95/DiscordFonts@master/Ginto-Nord/Ginto-Nord-700.woff) format("woff")
+}
+
+* {
+    font-family: "gg sans Normal", whitney, Arial;
+    outline: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    transition: all 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    align-items: center;
+    height: 70px;
+    gap: 50px;
+    top: 0px;
+    width: 100vw;
+    z-index: 500;
+}
+
+header button.goback {
+    background: #fff3;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    cursor: pointer;
+    position: absolute;
+    left: 50px;
+    width: 150px;
+}
+
+header button.goback:hover {
+    background: #ddd7;
+    border: none;
+    outline: none;
+}
+
+header button.goback svg {
+    fill: #000;
+    height: 20px;
+}
+
+header h1 {
+    position: absolute;
+    left: 280px;
+    font-size: 30px;
+}
+
+div.content {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 70px;
+    bottom: 0px;
+    margin: 0px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+div.infocolumn {
+    min-width: 300px;
+    max-width: 300px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+}
+
+div.infocolumn div.author {
+    min-width: 150px;
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.infocolumn div.author p.name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+div.infocolumn div.author p:not(.name) {
+    opacity: .6;
+}
+
+div.infocolumn div.author p {
+    margin: 0px;
+}
+
+div.infocolumn img {
+    height: 75px;
+    width: 75px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+div.postcolumn {
+    width: 100%;
+}
+
+div.postcolumn p {
+    font-weight: 100;
+    font-size: 26px;
+    text-align: justify;
+}
+
+div.postcolumn h1 {
+    font-family: Ginto;
+    font-size: 50px;
+}
+
+div.postcolumn h3 {
+    font-weight: 100;
+    font-size: 40px;
+    text-align: justify;
+    font-family: "gg sans";
+    margin-top: 150px;
+}
+
+div.infocolumn .labels {
+    min-width: 200px;
+    max-width: 250px;
+    list-style: none;
+    padding: 0px;
+    background-color: #add8e650;
+    inline-size: 230px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+div.infocolumn .labels li {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #5865f2;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+div.infocolumn .labels li.d {
+    background-color: #fee528;
+    color: #000;
+}
+
+div.infocolumn .labels li.n {
+    background-color: #000000;
+    color: #fff;
+}
+
+div.infocolumn .labels li.r {
+    background-color: #ed4245;
+    color: #000;
+}
+
+div.infocolumn .labels li.v {
+    background-color: #08b140;
+    color: #fff;
+}
+
+div.infocolumn .labels li.b {
+    background-color: #ccc;
+    color: #000;
+}
+
+div.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div.buttons label.saveLabel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 180px;
+    justify-content: center;
+    height: 50px;
+}
+
+div.buttons label.saveLabel.checked {
+    background-color: #ed424530;
+    border: 1px solid #0000;
+}
+
+div.buttons label.saveLabel svg {
+    fill: transparent;
+    stroke: #000;
+    height: 25px;
+}
+
+div.buttons label.saveLabel.checked svg {
+    fill: #f00;
+    stroke: #f00;
+    height: 25px;
+}
+
+div.buttons label.saveLabel input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+div.buttons label.saveLabel input::before {
+    content: 'Guardar';
+    font-size: 16px;
+}
+
+div.buttons label.saveLabel.checked input::before {
+    content: '¡Guardado!';
+    font-weight: bold;
+}

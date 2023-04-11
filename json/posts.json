@@ -1,0 +1,249 @@
+{
+    "example": [
+        {
+            "title": "",
+            "description": "",
+            "labels": [],
+            "id": "",
+            "image": "",
+            "author": {
+                "name": "",
+                "pfp": ""
+            },
+            "updates": [
+                {
+                    "description": "",
+                    "unix": ""
+                }
+            ],
+            "content": [
+                {
+                    "type": "title",
+                    "text": ""
+                },
+                {
+                    "type": "text",
+                    "text": ""
+                },
+                {
+                    "type": "img",
+                    "src": "",
+                    "alt": ""
+                },
+                {
+                    "type": "a",
+                    "href": "",
+                    "target": "",
+                    "text": ""
+                },
+                {
+                    "type": "actionRow",
+                    "content": [
+                        {
+                            "type": "button",
+                            "style": "",
+                            "href": "",
+                            "target": "",
+                            "onclick": "",
+                            "text": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "help": [
+        {
+            "title": "Catto Testers",
+            "description": "¿No sabes lo que son los Catto Testers? ¡Te lo presentamos en 2 minutos!",
+            "labels": ["devSelection","testers","catto","catto testers","development","beta","pruebas","desarrollo"],
+            "id": "catto-testers",
+            "author": {
+                "name": "gacarbla",
+                "pfp": "https://cdn.discordapp.com/attachments/1095009011146952865/1095009563901698129/g.jpg"
+            },
+            "updates": [
+                {
+                    "description": "Creación del post",
+                    "unix": "1681162859"
+                }
+            ],
+            "content": [
+                {
+                    "type": "text",
+                    "text": "¿Sabías que hay un misterioso grupo de usuarios que han jurado mantener en su servidor a una salvaje y peligrosa versión de Catto que no ha sido probada nunca antes?"
+                },
+                {
+                    "type":"text",
+                    "text": "Pues sí, un reducido grupo de personas, no tan misteriosas, han acordado ayudarnos a encontrar errores y aspectos a mejorar con tal de disponer de la presencia de Catto en su servidor. Podríamos decir que son los primeros usuarios de Catto, aunque en el momento en que se redacta esto, ya tiene más de 60 000 usuarios."
+                },
+                {
+                    "type": "text",
+                    "text": "¡Tú también puedes formar parte de este grupo si cumples nuestros requisitos! Sólo necesitas un servidor público, con al menos 500 usuarios. Tendrás que aceptar que el bot puede ser apagado por horas si hay algún fallo o mantenimiento, y si tú o alguno de tus usuarios encuentran algún error, tendrán que contárnoslo lo más rápido posible en nuestro servidor de soporte. Para esto, obviamente necesitarás acceder a nuestro servidor haciendo <a href=\"https://discord.com/invite/TqUM6aCKUQ\" target=\"blank_\">click aquí</a>. También será necesario que notifiques que el bot ha sido implementado en el servidor y puede tener fallos, pídeles que te ayuden a encontrarlos y reportarlos."
+                },
+                {
+                    "type": "text",
+                    "text": "Únete ya y consigue acceso adelantado a funciones exclusivas. Los Catto Testers disponen de una versión de Catto 100% libre y gratuíta."
+                }
+            ]
+        },
+        {
+            "title": "Developers",
+            "description": "Conoce a los desarrolladores de Catto y descubre cómo ponerte en contacto con ellos",
+            "labels": ["devSelection","developers","desarrollo","catto","desarrolladores","programación","programar","dueños", "fundadores", "creadores", "dueñas", "fundadoras", "creadoras"],
+            "id": "developers",
+            "image": "",
+            "author": {
+                "name": "gacarbla",
+                "pfp": "https://cdn.discordapp.com/attachments/1095009011146952865/1095009563901698129/g.jpg"
+            },
+            "updates": [
+                {
+                    "description": "creación del post",
+                    "unix": "1681164077"
+                }
+            ],
+            "content": [
+                {
+                    "type": "text",
+                    "text": "¡Nuestro equipo de desarrolladores está actualmente conformado por un total de 3 integrantes! ¿Quieres saber un poco más de ellos?"
+                },
+                {
+                    "type": "title",
+                    "text": "Mathéo"
+                },
+                {
+                    "type": "text",
+                    "text": "El programador más experimentado del equipo en JavaScript y TypeScript lidera el proyecto de Catto mientras dirige como fundador la gran comunidad de Discord <a href=\"https://discord.com/invite/gatitos\" target=\"blank_\">Gatitos World</a>. Su gran experiencia en la materia lo hace el coordinador ideal."
+                },
+                {
+                    "type": "title",
+                    "text": "Rainz"
+                },
+                {
+                    "type": "text",
+                    "text": "Con amplios conocimientos en gestión y bases de datos, Rainz mantiene la información de Catto a buen recaudo, controlando el host. Cabe destacar que sus colaboraciones en el desarrollo del código del bot son notorias y de gran relevancia."
+                },
+                {
+                    "type": "title",
+                    "text": "gacarbla"
+                },
+                {
+                    "type": "text",
+                    "text": "Su experiencia en programación, y diferente visión a cerca de la utilidad del bot y solución de sus problemas, hacen a gacarbla un ayudante nato para lograr incrementar el ritmo de trabajo y diseñar nuevas herramientas y utilidades."
+                }
+            ]
+        },
+        {
+            "title": "El equipo",
+            "description": "Mucha gente ha participado en la creación de este bot ¿Quieres conocerlos?",
+            "labels": ["devSelection","developers","desarrollo","catto","desarrolladores","programación","programar","dueños", "fundadores", "creadores", "dueñas", "fundadoras", "creadoras"],
+            "id": "el-equipo",
+            "image": "",
+            "author": {
+                "name": "gacarbla",
+                "pfp": "https://cdn.discordapp.com/attachments/1095009011146952865/1095009563901698129/g.jpg"
+            },
+            "updates": [
+                {
+                    "description": "creación del post",
+                    "unix": "1681237136"
+                }
+            ],
+            "content": [
+                {
+                    "type": "title",
+                    "text": "Desarrollo"
+                },
+                {
+                    "type": "text",
+                    "text": "<a href=\"https://discord.com/users/216746923070062593\" target=\"blank_\">Mathéo</a>"
+                },
+                {
+                    "type": "text",
+                    "text": "<a href=\"https://discord.com/users/249600415040012309\" target=\"blank_\">Rainz</a>"
+                },
+                {
+                    "type": "text",
+                    "text": "<a href=\"https://discord.com/users/643575943289634836\" target=\"blank_\">gacarbla</a>"
+                },
+                {
+                    "type": "title",
+                    "text": "Gestión de datos"
+                },
+                {
+                    "type": "text",
+                    "text": "<a href=\"https://discord.com/users/249600415040012309\" target=\"blank_\">Rainz</a>"
+                },
+                {
+                    "type": "title",
+                    "text": "Mantenimiento y producción web"
+                },
+                {
+                    "type": "text",
+                    "text": "<a href=\"https://discord.com/users/216746923070062593\" target=\"blank_\">Mathéo</a>"
+                },
+                {
+                    "type": "text",
+                    "text": "<a href=\"https://discord.com/users/249600415040012309\" target=\"blank_\">Rainz</a>"
+                },
+                {
+                    "type": "text",
+                    "text": "<a href=\"https://discord.com/users/643575943289634836\" target=\"blank_\">gacarbla</a>"
+                },
+                {
+                    "type": "title",
+                    "text": "Ideas, testing y soporte"
+                },
+                {
+                    "type": "text",
+                    "text": "<a href=\"https://discord.com/users/286554300312846336\" target=\"blank_\">Wais</a>"
+                },
+                {
+                    "type": "text",
+                    "text": "<a href=\"https://discord.com/users/229330494620172288\" target=\"blank_\">Wickedlley</a>"
+                },
+                {
+                    "type": "text",
+                    "text": "<a href=\"https://discord.com/users/742564200706211921\" target=\"blank_\">Yex</a>"
+                }
+            ]
+        },
+        {
+            "title": "¿Qué es un comando?",
+            "description": "Te introducimos los comandos de Discord y te explicamos cómo usar los comandos de Catto. Adéntrate en el mundo de las interacciones.",
+            "labels": ["help", "ayuda", "ajuda", "comando", "bot", "discord","destacado"],
+            "id": "que-es-un-comando",
+            "image": "",
+            "author": {
+                "name": "gacarbla",
+                "pfp": "https://cdn.discordapp.com/attachments/1095009011146952865/1095009563901698129/g.jpg"
+            },
+            "updates": [
+                {
+                    "description": "",
+                    "unix": ""
+                }
+            ],
+            "content": []
+        },
+        {
+            "title": "¿Cómo invitar al bot?",
+            "description": "¿Problemas para hacer que Catto se una a tu servidor? ¡Sabemos lo que está pasando!",
+            "labels": ["help", "ayuda", "ajuda", "invitación", "invitar", "bot", "discord","destacado"],
+            "id": "como-invitar-al-bot",
+            "image": "",
+            "author": {
+                "name": "gacarbla",
+                "pfp": "https://cdn.discordapp.com/attachments/1095009011146952865/1095009563901698129/g.jpg"
+            },
+            "updates": [
+                {
+                    "description": "",
+                    "unix": ""
+                }
+            ],
+            "content": []
+        }
+    ]
+}

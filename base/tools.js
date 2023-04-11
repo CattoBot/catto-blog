@@ -41,16 +41,7 @@ const indexedDB = {
             };
             request.onupgradeneeded = function (e) {
                 indexedDB.db = e.target.result;
-                indexedDB.addsheet("guilds", [
-                    { name: "name", unique: false },
-                    { name: "icon", unique: false },
-                    { name: "owner", unique: false },
-                    { name: "perms", unique: false },
-                    { name: "features", unique: false }
-                ])
-                indexedDB.addsheet("data", [
-                    { name: "value", unique: false}
-                ])
+                indexedDB.addsheet("saved", [])
             };
         })
     },

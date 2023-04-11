@@ -19,776 +19,146 @@
 
     <!--  Hojas de estilo  -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./cards.css">
+    <link rel="stylesheet" href="./search.css">
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="./content.css">
     <link rel="stylesheet" href="../base/loader.css">
 
     <!--  Scripts  -->
+    <script src="../base/tools.js"></script>
+    <script src="./classes.js"></script>
     <script src="./script.js"></script>
     <script src="../base/loader.js"></script>
-    <script src="../base/tools.js"></script>
 
     <!--  Título  -->
     <title>Catto • Support</title>
 
 </head>
 
-<body id="body">
+<body id="body" class="dark">
     <script>
         // Antes de cargar el resto de la página, carga el loader
         showLoader();
     </script>
     <!-- Contenido general, este div es el que contiene todos los elementos de la página -->
     <div class="content">
-        <div class="columns">
-            <div class="index">
-                <div class="header">
-                    <svg viewBox="0 0 100 100">
-                        <g>
-                            <path id="path878" style="stroke-width:7.97231;stroke-linecap:round;stroke-linejoin:round"
-                                d="M 194.31641 42.142578 A 147.11223 147.0457 0 0 0 47.205078 189.18945 A 147.11223 147.0457 0 0 0 194.31641 336.23438 A 147.11223 147.0457 0 0 0 198.87305 336.16406 L 198.29688 336.06445 C 225.90282 333.81606 255.86011 320.63516 276.78516 301.07227 C 293.70708 285.2519 306.38927 262.62625 309.28516 239.64258 C 312.08618 217.41176 303.99582 194.11958 293.57227 174.28516 C 285.17213 158.30099 258.44533 134.69908 257.375 133.98242 C 256.30467 133.26577 255.29392 133.75244 255.41797 135.61133 C 255.41797 135.61133 255.70989 142.87452 254.96484 146.39453 C 254.16302 150.18269 251.06596 152.53763 249.32031 152.76953 C 248.79974 152.8387 248.05563 152.87522 247.94141 152.49023 C 247.66822 151.56944 248.81621 150.06679 248.58594 146.36133 C 248.40898 143.5137 245.52127 138.90939 244.13477 137.16406 C 241.2591 133.54417 240.32505 132.51639 239.375 131.85352 C 238.68075 131.36912 237.16885 130.9228 236.44531 132.89844 C 235.01634 136.80026 230.29974 151.51323 222.04492 154.2207 C 209.83535 158.22528 203.45469 163.95437 197.57227 172.18945 C 194.37889 176.66001 193.19278 182.45261 192.65234 187.91992 C 192.17113 192.78811 193.44577 196.15863 194.20508 202.51367 C 194.63656 206.12494 188.82138 217.70284 186.94922 218.55859 C 188.77622 221.63684 195.06363 232.86699 200.95508 235.63477 C 210.56882 240.15126 222.44108 237.59025 232.81836 235.32422 C 239.20445 233.92972 247.83803 228.9592 250.72266 227.32422 C 253.60728 225.68924 253.53667 227.84929 252.68359 228.71484 C 251.83052 229.5804 245.66109 236.54422 241.08594 238.89648 C 229.08652 245.06584 215.12409 247.10979 201.66797 248.09961 C 187.29847 249.15661 172.99521 244.24542 158.58984 244.53711 C 148.02189 244.75111 137.12772 245.02837 127.11914 248.42773 C 116.28677 252.1069 97.539063 265.83203 97.539062 265.83203 C 75.79123 243.24725 70.683014 213.9284 69.824219 185.66797 C 69.18247 164.54997 76.582382 143.07701 86.859375 124.61719 C 94.348819 111.16445 105.93354 100.01579 118.13672 90.626953 C 131.39631 80.425343 146.3277 71.346357 162.54688 67.244141 C 182.12239 62.293024 203.42841 62.116936 223.11914 66.587891 C 240.85547 70.615079 257.77881 79.437229 272.07422 90.681641 C 284.17113 100.19677 299.23257 122.87949 301.64844 126.14062 C 304.06431 129.40176 311.13633 134.10605 316.95117 135.49609 C 320.7909 136.41399 327.72034 135.24466 330.91992 134.60938 A 147.11223 147.0457 0 0 0 194.31641 42.142578 z "
-                                transform="scale(0.26458333)" />
-                        </g>
-                    </svg>
-                    <div class="text">
-                        <p class="title">Catto</p>
-                        <p class="subtitle">Help center</p>
+        <div class="windows" id="windows">
+            <div class="searcher hidden">
+                <h1>BUSCADOR AVANZADO</h1>
+                <div class="searchfield">
+                    <label class="searchlabel">
+                        <input type="search" placeholder="Buscar..." id="searchbar">
+                    </label>
+                </div>
+                <div class="optionsfield">
+                    <label><input id="titles" name="searchoptions" type="radio" checked="true">
+                        <p>Buscar en títulos</p>
+                    </label>
+                    <label><input id="texts"  name="searchoptions" type="radio">
+                        <p>Buscar en textos</p>
+                    </label>
+                    <label><input id="labels"  name="searchoptions" type="radio">
+                        <p>Buscar en etiquetas</p>
+                    </label>
+                    <label><input id="all"  name="searchoptions" type="radio">
+                        <p>Buscar en todo</p>
+                    </label>
+                </div>
+                <div class="results" id="resultsDiv"></div>
+                <h3>Sugerencias:</h3>
+                <div class="suggestions">
+                    <div class="suggestion" onclick="window.location = './page/index.html?catto-testers'">
+                        <div class="vector">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M6 3v3H3V3h3ZM1.5 1.5v6h6v-6h-6Z"></path>
+                                <path d="M13.5 5.25v3h-3v-3h3ZM9 3.75v6h6v-6H9Z"></path>
+                                <path d="M6 12v3H3v-3h3Zm-4.5-1.5v6h6v-6h-6Z"></path>
+                                <path d="M16.5 7.5V12H12v4.5H7.5v6h15v-15h-6Zm-3 6h3v3h-3v-3ZM12 21H9v-3h3v3Zm4.5 0h-3v-3h3v3Zm4.5 0h-3v-3h3v3Zm0-4.5h-3v-3h3v3ZM18 12V9h3v3h-3Z"></path>
+                            </svg>
+                        </div>
+                        <p>Catto Testers</p>
+                        <div class="arrow">
+                            <svg viewBox="0 0 24 24"><path d="m9 6 7.5 6L9 18V6Z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="suggestion" onclick="window.location = './page/index.html?que-es-un-comando'">
+                        <div class="vector">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 1.5a10.5 10.5 0 1 0 0 21 10.5 10.5 0 0 0 0-21ZM12 21a9 9 0 1 1 0-18 9 9 0 0 1 0 18Z"></path>
+                                <path d="M12 18.75a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"></path>
+                                <path d="M12.75 6h-1.125A3.367 3.367 0 0 0 8.25 9.375v.375h1.5v-.375A1.875 1.875 0 0 1 11.625 7.5h1.125a1.875 1.875 0 1 1 0 3.75h-1.5v3.375h1.5V12.75a3.375 3.375 0 0 0 0-6.75Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p>¿Qué es un comando?</p>
+                        <div class="arrow">
+                            <svg viewBox="0 0 24 24">
+                                <path d="m9 6 7.5 6L9 18V6Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="suggestion" onclick="window.location = './page/index.html?como-invitar-al-bot'">
+                        <div class="vector">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 1.5a10.5 10.5 0 1 0 0 21 10.5 10.5 0 0 0 0-21ZM12 21a9 9 0 1 1 0-18 9 9 0 0 1 0 18Z"></path>
+                                <path d="M12 18.75a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"></path>
+                                <path d="M12.75 6h-1.125A3.367 3.367 0 0 0 8.25 9.375v.375h1.5v-.375A1.875 1.875 0 0 1 11.625 7.5h1.125a1.875 1.875 0 1 1 0 3.75h-1.5v3.375h1.5V12.75a3.375 3.375 0 0 0 0-6.75Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p>¿Cómo invitar al bot?</p>
+                        <div class="arrow">
+                            <svg viewBox="0 0 24 24"><path d="m9 6 7.5 6L9 18V6Z"></path></svg>
+                        </div>
                     </div>
                 </div>
-                <div class="menu">
-                    <nav>
-                        <ul>
-                            <li>
-                                <p>¡Bienvenid@!</p>
-                                <ul>
-                                    <a href="#101">
-                                        <li>¿Qué es esto?</li>
-                                    </a>
-                                </ul>
-                            </li>
-                            <div class="separator" onclick="window.location='#discord'">DISCORD</div>
-                            <li>
-                                <p>Discord</p>
-                                <ul>
-                                    <a href="#201">
-                                        <li>¿Qué es Discord?</li>
-                                    </a>
-                                    <a href="#202">
-                                        <li>Funcionamiento</li>
-                                    </a>
-                                    <a href="#203">
-                                        <li></li>
-                                    </a>
-                                </ul>
-                            </li>
-                            <li>
-                                <p>Servidores</p>
-                                <ul>
-                                    <a href="#301">
-                                        <li>¿Qué es un servidor?</li>
-                                    </a>
-                                    <a href="#302">
-                                        <li>Funcionamiento</li>
-                                    </a>
-                                    <a href="#303">
-                                        <li>Unirse a un servidor</li>
-                                    </a>
-                                    <a href="#304">
-                                        <li>Crear a un servidor</li>
-                                    </a>
-                                    <a href="#305">
-                                        <li>Editar un servidor</li>
-                                    </a>
-                                    <a href="#306">
-                                        <li>Eliminar un servidor</li>
-                                    </a>
-                                    <a href="#307">
-                                        <li>Aislar en un servidor</li>
-                                    </a>
-                                    <a href="#308">
-                                        <li>Expulsar de un servidor</li>
-                                    </a>
-                                    <a href="#309">
-                                        <li>Banear de un servidor</li>
-                                    </a>
-                                    <a href="#310">
-                                        <li>Desbanear de un servidor</li>
-                                    </a>
-                                </ul>
-                            </li>
-                            <li>
-                                <p>Canales</p>
-                                <ul>
-                                    <a href="#401">
-                                        <li>¿Qué es un canal?</li>
-                                    </a>
-                                    <a href="#402">
-                                        <li>Canales de texto</li>
-                                    </a>
-                                    <a href="#403">
-                                        <li>Canales de anuncios</li>
-                                    </a>
-                                    <a href="#404">
-                                        <li>Canales de foros</li>
-                                    </a>
-                                    <a href="#405">
-                                        <li>Canales de voz</li>
-                                    </a>
-                                    <a href="#406">
-                                        <li>Canales de escenario</li>
-                                    </a>
-                                    <a href="#407">
-                                        <li>Permisos en los canales</li>
-                                    </a>
-                                    <a href="#408">
-                                        <li>Crear un canal</li>
-                                    </a>
-                                    <a href="#409">
-                                        <li>Editar un canal</li>
-                                    </a>
-                                </ul>
-                            </li>
-                            <li>
-                                <p>Roles</p>
-                                <ul>
-                                    <a href="#501">
-                                        <li>¿Qué es un rol?</li>
-                                    </a>
-                                    <a href="#502">
-                                        <li>Funcionamiento</li>
-                                    </a>
-                                    <a href="#503">
-                                        <li>Ver mis roles</li>
-                                    </a>
-                                    <a href="#504">
-                                        <li>¿Cómo conseguir un rol?</li>
-                                    </a>
-                                    <a href="#505">
-                                        <li></li>
-                                    </a>
-                                </ul>
-                            </li>
-                            <li>
-                                <p>IDs</p>
-                                <ul>
-                                    <a href="#601">
-                                        <li>¿Qué es una ID?</li>
-                                    </a>
-                                    <a href="#602">
-                                        <li>¿Cómo conseguir una ID?</li>
-                                    </a>
-                                    <a href="#603">
-                                        <li>Utilidad</li>
-                                    </a>
-                                    <a href="#604">
-                                        <li>Mencionando IDs</li>
-                                    </a>
-                                </ul>
-                            </li>
-                            <li>
-                                <p>Bots</p>
-                                <ul>
-                                    <a href="#701">
-                                        <li>¿Qué es un bot?</li>
-                                    </a>
-                                    <a href="#702">
-                                        <li>Utilidades del bot</li>
-                                    </a>
-                                    <a href="#703">
-                                        <li>Añadir un bot al servidor</li>
-                                    </a>
-                                    <a href="#704">
-                                        <li>Gestionar permisos del bot</li>
-                                    </a>
-                                </ul>
-                            </li>
-                            <li>
-                                <p>Interacciones</p>
-                                <ul>
-                                    <a href="#801">
-                                        <li>Comandos</li>
-                                    </a>
-                                    <a href="#802">
-                                        <li>Botones</li>
-                                    </a>
-                                    <a href="#803">
-                                        <li>Listas</li>
-                                    </a>
-                                    <a href="#804">
-                                        <li>Modales</li>
-                                    </a>
-                                    <a href="#805">
-                                        <li>Acciones rápidas</li>
-                                    </a>
-                                </ul>
-                            </li>
-                            <div class="separator" onclick="window.location='#catto'">CATTO</div>
-                            <li>
-                                <p>Catto</p>
-                                <ul>
-                                    <a href="#901">
-                                        <li>¿Qué es Catto?</li>
-                                    </a>
-                                    <a href="#902">
-                                        <li>¿En qué me ayudará Catto?</li>
-                                    </a>
-                                    <a href="#903">
-                                        <li>¿Es necesario cumplir algún requisito?</li>
-                                    </a>
-                                    <a href="#904">
-                                        <li>¿Es gratuíto?</li>
-                                    </a>
-                                    <a href="#905">
-                                        <li>¿Cómo invito a Catto a mi servidor?</li>
-                                    </a>
-                                </ul>
-                            </li>
-                            <li>
-                                <p>Comandos</p>
-                                <ul>
-                                    <a href="#1001">
-                                        <li>Lista de comandos</li>
-                                    </a>
-                                    <a href="#1002">
-                                        <li>Personalizar lista</li>
-                                    </a>
-                                    <a href="#1003">
-                                        <li>Personalizar permisos</li>
-                                    </a>
-                                    <a href="#1004">
-                                        <li>Activar o desactivar</li>
-                                    </a>
-                                    <a href="#1005">
-                                        <li>Especificaciones de comandos</li>
-                                    </a>
-                                </ul>
-                            </li>
-                            <li>
-                                <p>Mensajes al MD</p>
-                                <ul>
-                                    <a href="#1101">
-                                        <li>Permisos</li>
-                                    </a>
-                                    <a href="#1102">
-                                        <li>Razones</li>
-                                    </a>
-                                    <a href="#1103">
-                                        <li>Personalización</li>
-                                    </a>
-                                </ul>
-                            </li>
-                            <li>
-                                <p>Configuración</p>
-                                <ul>
-                                    <a href="#1201">
-                                        <li>Inicio</li>
-                                    </a>
-                                    <a href="#1202">
-                                        <li>Función de canales</li>
-                                    </a>
-                                    <a href="#1203">
-                                        <li>Gestión de usuarios</li>
-                                    </a>
-                                    <a href="#1204">
-                                        <li>Gestión de roles</li>
-                                    </a>
-                                    <a href="#1205">
-                                        <li>Dashboard</li>
-                                    </a>
-                                </ul>
-                            </li>
-                            <li>
-                                <p>Gestión del servidor</p>
-                                <ul>
-                                    <a href="#1301">
-                                        <li>Funcionamiento</li>
-                                    </a>
-                                    <a href="#1302">
-                                        <li>Servicios</li>
-                                    </a>
-                                </ul>
-                            </li>
-                            <li>
-                                <p>Seguridad</p>
-                                <ul>
-                                    <a href="#1401">
-                                        <li>Reportar un bug</li>
-                                    </a>
-                                    <a href="#1402">
-                                        <li>Nuestras medidas de seguridad</li>
-                                    </a>
-                                    <a href="#1403">
-                                        <li>¡Hack me!</li>
-                                    </a>
-                                </ul>
-                            </li>
-                            <li>
-                                <p>Dashboard</p>
-                                <ul>
-                                    <a href="#1501">
-                                        <li>¿Qué es una dashboard?</li>
-                                    </a>
-                                    <a href="#1502">
-                                        <li>Acceso a la dashboard</li>
-                                    </a>
-                                    <a href="#1503">
-                                        <li>Iniciar sesión</li>
-                                    </a>
-                                    <a href="#1504">
-                                        <li>Área personal</li>
-                                    </a>
-                                    <a href="#1505">
-                                        <li>Añadir un servidor</li>
-                                    </a>
-                                    <a href="#1506">
-                                        <li>Gestionar un servidor</li>
-                                    </a>
-                                    <a href="#1507">
-                                        <li>Dejar de gestionar un servidor</li>
-                                    </a>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
             </div>
-            <div class="help">
-                <h1>CATTO HELP CENTER</h1>
-                <h2>¡Bienvenid@!</h2>
-                <div id="101">
-                    <h3>¿Qué es esto?</h3>
-                    <p>
-                        ¡Hola! Bienvenido a Catto Help Center, un sitio web creado especialmente para brindarte
-                        información sobre Catto y cómo funciona. Si te fijas en el lado izquierdo de la pantalla, verás
-                        dos secciones principales llamadas "Discord" y "Catto". En la sección "Discord" te mostramos
-                        todo lo que necesitas saber sobre cómo funciona Discord, de la forma más clara posible. En la
-                        sección "Catto" te presentamos a nuestro amigo Catto, y te mostramos las funciones que tiene
-                        integradas y cómo puedes usarlas. ¡Esperamos que te sea de gran ayuda!
-                    </p>
-                </div>
-                <h1 id="discord">DISCORD</h1>
-                <h2>Discord</h2>
-                <div id="201">
-                    <h3>¿Qué es Discord?</h3>
-                    <p>
-                        Discord es una plataforma de comunicación en línea que permite a los usuarios hablar, escribir y
-                        compartir cosas en tiempo real. Se usa principalmente para juegos de video, pero también se usa
-                        para otras cosas. Los usuarios pueden crear sus propios servidores y canales de chat para
-                        diferentes temas, y también pueden hacer llamadas de voz y video en grupo. Discord tiene muchas
-                        funciones adicionales, como compartir pantallas y archivos, integración con otras aplicaciones y
-                        servicios, y personalización de la apariencia de la plataforma. Es popular porque es fácil de
-                        usar y se puede usar en muchos contextos diferentes.
-                    </p>
-                </div>
-                <div id="202">
-                    <h3>Funcionamiento</h3>
-                    <p>
-                        Los usuarios se registran para obtener una cuenta gratuita y luego pueden crear sus propios
-                        servidores personalizados. Dentro de estos servidores, los usuarios pueden crear canales de chat
-                        para diferentes temas y discusiones, y también pueden realizar llamadas de voz y video en grupo.
-                        Además, Discord ofrece la capacidad de compartir pantallas y archivos, integrarse con otras
-                        aplicaciones y servicios, y personalizar la apariencia de la plataforma con temas y ajustes de
-                        diseño.
-                    </p>
-                </div>
-                <h2>Servidores</h2>
-                <div id="301">
-                    <h3>¿Qué es un servidor?</h3>
-                    <p>
-                        Un servidor de Discord es un espacio virtual personalizable que los usuarios pueden crear para
-                        comunicarse con otros usuarios en tiempo real. Los servidores se organizan en canales de chat y
-                        pueden ser públicos o privados, y son utilizados principalmente por comunidades en línea, como
-                        grupos de amigos, organizaciones, clubs de fans y comunidades de jugadores de videojuegos.
-                    </p>
-                </div>
-                <div id="302">
-                    <h3>Funcionamiento</h3>
-                    <p>
-                        Un usuario que no tenga permisos de administrador en un servidor de Discord puede unirse a los
-                        canales de chat públicos o a los que tenga acceso, pero no puede realizar cambios en la
-                        configuración del servidor ni agregar o eliminar canales o roles. Pueden enviar mensajes de
-                        texto en los canales de chat de texto y hablar en los canales de voz, pero no pueden eliminar
-                        mensajes de otros usuarios ni otorgarse permisos adicionales sin el permiso de los
-                        administradores del servidor.
-                    </p>
-                </div>
-                <div id="303">
-                    <h3>Unirse a un servidor</h3>
-                    <p>
-                        Para unirse a un servidor de Discord, primero debes crear una cuenta de Discord, buscar el
-                        servidor al que deseas unirte, hacer clic en el enlace de invitación y confirmar que deseas
-                        unirte al servidor. Una vez que te hayas unido, puedes explorar los canales de chat y comenzar a
-                        comunicarte con otros miembros del servidor.
-                    </p>
-                </div>
-                <div id="304">
-                    <h3>Crear un servidor</h3>
-                    <p>
-                        Para crear un servidor de Discord, primero debes iniciar sesión en tu cuenta de Discord, hacer
-                        clic en el botón "+" y seleccionar "Crear servidor". Luego, personaliza la apariencia del
-                        servidor, configura los permisos, crea canales de chat y finalmente invita a otros usuarios a
-                        unirse al servidor.
-                    </p>
-                </div>
-                <div id="305">
-                    <h3>Editar un servidor</h3>
-                    <p>
-                        Para editar los ajustes de un servidor de Discord, debes hacer clic en el nombre del servidor en
-                        la barra lateral izquierda de Discord, seleccionar "Ajustes del servidor" en el menú desplegable
-                        y luego editar los diferentes aspectos del servidor, como la imagen, la descripción, los roles,
-                        los canales de chat, las invitaciones, la moderación y las integraciones.
-                    </p>
-                </div>
-                <div id="306">
-                    <h3>Eliminar un servidor</h3>
-                    <p>
-                        Para eliminar un servidor de Discord, debes hacer clic con el botón derecho en el nombre del
-                        servidor en la barra lateral izquierda de Discord, seleccionar "Ajustes del servidor",
-                        desplazarte hasta la parte inferior de la lista de opciones y seleccionar "Eliminar servidor".
-                        Es importante tener en cuenta que esta acción es permanente y solo puede ser realizada por un
-                        usuario con permisos de administrador en el servidor.
-                    </p>
-                </div>
-                <div id="307">
-                    <h3>Aislar en un servidor</h3>
-                    <p></p>
-                </div>
-                <div id="308">
-                    <h3>Expulsar de un servidor</h3>
-                    <p>
-                        Para expulsar a un usuario de un servidor de Discord, debes hacer clic con el botón derecho en
-                        el nombre del usuario en la lista de miembros del servidor, seleccionar "Expulsar" en el menú
-                        desplegable y confirmar la acción de expulsar al usuario. Es importante tener en cuenta que solo
-                        los usuarios con los permisos necesarios en el servidor pueden expulsar a otros usuarios y que
-                        esto solo sacará temporalmente al usuario del servidor.
-                    </p>
-                </div>
-                <div id="309">
-                    <h3>Banear de un servidor</h3>
-                    <p>
-                        Para banear a un usuario de un servidor de Discord, debes hacer clic con el botón derecho en el
-                        nombre del usuario en la lista de miembros del servidor, seleccionar "Banear" en el menú
-                        desplegable y confirmar la acción de banear al usuario. Al banear a un usuario, se le
-                        impedirá acceder al servidor de forma permanente. Es importante tener en cuenta que solo los
-                        usuarios con los permisos necesarios en el servidor pueden banear a otros usuarios y que
-                        esto debe hacerse siguiendo un proceso justo y solo en casos de incumplimiento grave de las
-                        normas del servidor.
-                    </p>
-                </div>
-                <div id="310">
-                    <h3>Desbanear de un servidor</h3>
-                    <p>
-                        Para desbanear a un usuario de un servidor de Discord, debes acceder a la configuración del
-                        servidor, seleccionar la opción "Baneos", buscar el nombre del usuario en la lista de
-                        usuarios baneados y hacer clic en el botón "Revocar baneo" para desbanearlo. Solo los usuarios
-                        con
-                        los permisos necesarios en el servidor pueden desbanear a otros usuarios y es importante
-                        seguir las reglas y normas del servidor para evitar problemas o conflictos.
-                    </p>
-                </div>
-                <h2>Canales</h2>
-                <div id="401">
-                    <h3>¿Qué es un canal?</h3>
-                    <p>
-                        Un canal de Discord es una sala virtual dentro de un servidor de Discord, donde los usuarios
-                        pueden comunicarse y compartir información. Los canales pueden ser de diferentes tipos, como
-                        texto o voz, y se pueden personalizar según las necesidades del servidor. Los canales de texto
-                        permiten a los usuarios enviar y recibir mensajes escritos, mientras que los canales de voz
-                        permiten a los usuarios hablar y escuchar en tiempo real. Además, los canales pueden ser
-                        públicos o privados, y se pueden limitar los permisos de acceso a ciertos usuarios o roles en el
-                        servidor. En general, los canales de Discord son una herramienta importante para la comunicación
-                        y la colaboración dentro de una comunidad o grupo de usuarios en línea.
-                    </p>
-                </div>
-                <div id="402">
-                    <h3>Canales de texto</h3>
-                    <p>
-                        Los canales de texto en Discord permiten a los usuarios enviar y recibir mensajes escritos en
-                        tiempo real, se pueden personalizar según las necesidades del servidor, los mensajes pueden ser
-                        editados o eliminados, pueden incluir diferentes tipos de contenido, como texto, imágenes,
-                        enlaces y emojis, los permisos de acceso pueden ser configurados para cada canal y los mensajes
-                        pueden ser destacados o anclados. En general, los canales de texto son una herramienta útil para
-                        la comunicación y colaboración en línea.
-                    </p>
-                </div>
-                <div id="403">
-                    <h3>Canales de anuncios</h3>
-                    <p>
-                        Los canales de anuncios en Discord permiten a usuarios con permisos exclusivos enviar mensajes
-                        en ellos.
-                        Los usuarios que carecen de estos permisos pueden seguir el canal, haciendo que los mensajes que
-                        se envíen
-                        en él, se reenvíen en alguno de los canales de alguno de sus servidores. Esto hace tremendamente
-                        más
-                        sencilla la distribución de información entre servidores, al poder recibir en un sólo servidor
-                        los anuncios
-                        de múltiples servidores.
-                    </p>
-                </div>
-                <div id="404">
-                    <h3>Canales de foro</h3>
-                    <p></p>
-                </div>
-                <div id="405">
-                    <h3>Canales de voz</h3>
-                    <p></p>
-                </div>
-                <div id="406">
-                    <h3>Canales de escenario</h3>
-                    <p></p>
-                </div>
-                <div id="407">
-                    <h3>Permisos en los canales</h3>
-                    <p></p>
-                </div>
-                <div id="408">
-                    <h3>Crear un canal</h3>
-                    <p></p>
-                </div>
-                <div id="409">
-                    <h3>Editar un canal</h3>
-                    <p></p>
-                </div>
-                <h2>Roles</h2>
-                <div id="501">
-                    <h3>¿Qué es un rol?</h3>
-                    <p>
-                        Un rol de Discord es como una etiqueta que se le asigna a un usuario en un servidor de Discord
-                        para definir sus permisos y responsabilidades. Los permisos pueden ser personalizados por los
-                        administradores del servidor para restringir o permitir el acceso a ciertas funciones y canales
-                        del servidor. Los roles también se utilizan para identificar grupos de usuarios, como
-                        moderadores o administradores, y pueden tener un color asignado para identificar a los usuarios
-                        en el chat y en la lista de miembros del servidor. Los roles son útiles para organizar y
-                        administrar los permisos y la estructura de un servidor de Discord.
-                    </p>
-                </div>
-                <div id="502">
-                    <h3>Funcionamiento</h3>
-                    <p></p>
-                </div>
-                <div id="503">
-                    <h3>Ver mis roles</h3>
-                    <p>
-                        Para ver tus roles en Discord en un servidor específico, haz clic derecho en tu nombre de
-                        usuario en la lista de miembros del servidor y selecciona "Roles". Allí podrás ver una lista de
-                        los roles asignados a tu cuenta, junto con su color y nombre.
-                    </p>
-                </div>
-                <div id="504">
-                    <h3>¿Cómo conseguir un rol?</h3>
-                    <p></p>
-                </div>
-                <h2>IDs</h2>
-                <div id="601">
-                    <h3>¿Qué es una ID?</h3>
-                    <p>
-                        Una ID en Discord es un número único de hasta 19 dígitos que se asigna a cada usuario, servidor,
-                        canal y mensaje en Discord. Cada ID es única y no cambia, lo que es muy útil para identificar
-                        cada elemento en Discord de manera precisa y única. Puedes encontrar la ID de un elemento en
-                        Discord mirando la URL correspondiente, como la URL del perfil de un usuario, la página
-                        principal del servidor, la URL del canal o la URL del mensaje.
-                    </p>
-                </div>
-                <div id="602">
-                    <h3>¿Cómo conseguir una ID?</h3>
-                    <p></p>
-                </div>
-                <div id="603">
-                    <h3>Utilidad</h3>
-                    <p>
-                        Las IDs en Discord son útiles porque permiten identificar de manera precisa y unívoca cada
-                        elemento en Discord, automatizar tareas y verificar la realización de acciones en el lugar
-                        correcto. Un ejemplo de ello, es la identificación de un usuario, pues podrá modificar
-                        su perfil, pero no podrá modificar su ID, necesitará crearse una nueva cuenta en caso de que
-                        desee escapar al poder absoluto de la identificación por ID.
-                    </p>
-                </div>
-                <div id="604">
-                    <h3>Mencionando IDs</h3>
-                    <p></p>
-                </div>
-                <h2>Bots</h2>
-                <div id="701">
-                    <h3>¿Qué es un bot?</h3>
-                    <p>
-                        Un bot de Discord es una aplicación programada para realizar ciertas tareas de forma
-                        automatizada dentro de los servidores de Discord. Los bots pueden ser programados para realizar
-                        diversas tareas, como moderar el chat, enviar mensajes de bienvenida, reproducir música, enviar
-                        notificaciones, realizar encuestas y mucho más.
-                    </p>
-                    <p>
-                        Los bots también pueden ser creados por los usuarios mediante el uso de lenguajes de
-                        programación como JavaScript o Python. Discord ofrece una amplia documentación y API para ayudar
-                        a los desarrolladores a crear sus propios bots.
-                    </p>
-                </div>
-                <div id="702">
-                    <h3>Utilidades del bot</h3>
-                    <p>
-                        Los bots de Discord automatizan tareas y mejoran la experiencia de los usuarios en los
-                        servidores. Pueden realizar tareas como moderación, música, notificaciones, bienvenida,
-                        encuestas, juegos y conectar con otras plataformas. En resumen, hacen más eficiente la gestión
-                        del servidor y mejoran la experiencia del usuario.
-                    </p>
-                </div>
-                <div id="703">
-                    <h3>Añadir un bot al servidor</h3>
-                    <p>
-                        Los bots pueden ser agregados a un servidor de Discord mediante una invitación que se genera a
-                        través de la página de desarrolladores de Discord. Una vez agregado al servidor, el bot tendrá
-                        acceso a ciertas funciones y permisos según lo que se le haya permitido.
-                    </p>
-                </div>
-                <div id="704">
-                    <h3>Gestionar permisos del bot</h3>
-                    <p></p>
-                </div>
-                <h2>Interacciones</h2>
-                <div id="801">
-                    <h3>Comandos</h3>
-                    <p></p>
-                </div>
-                <div id="802">
-                    <h3>Botones</h3>
-                    <p></p>
-                </div>
-                <div id="803">
-                    <h3>Listas</h3>
-                    <p></p>
-                </div>
-                <div id="804">
-                    <h3>Modales</h3>
-                    <p></p>
-                </div>
-                <div id="805">
-                    <h3>Acciones rápidas</h3>
-                    <p></p>
-                </div>
-                <h1 id="catto">Catto</h1>
-                <h2>Catto</h2>
-                <div id="901">
-                    <h3>¿Qué es Catto?</h3>
-                    <p></p>
-                </div>
-                <div id="902">
-                    <h3>¿En qué me ayudará Catto?</h3>
-                    <p></p>
-                </div>
-                <div id="903">
-                    <h3>¿Es necesario cumplir algún requisito?</h3>
-                    <p></p>
-                </div>
-                <div id="904">
-                    <h3>¿Es gratuíto?</h3>
-                    <p></p>
-                </div>
-                <div id="905">
-                    <h3>¿Cómo invito a Catto a mi servidor?</h3>
-                    <p></p>
-                </div>
-                <h2>Comandos</h2>
-                <div id="1001">
-                    <h3>Lista de comandos</h3>
-                    <p></p>
-                </div>
-                <div id="1002">
-                    <h3>Personalizar lista</h3>
-                    <p></p>
-                </div>
-                <div id="1003">
-                    <h3>Personalizar permisos</h3>
-                    <p></p>
-                </div>
-                <div id="1004">
-                    <h3>Activar o desactivar</h3>
-                    <p></p>
-                </div>
-                <div id="1005">
-                    <h3>Especificaciones de comandos</h3>
-                    <p></p>
-                </div>
-                <h2>Mensajes al MD</h2>
-                <div id="1101">
-                    <h3>Permisos</h3>
-                    <p></p>
-                </div>
-                <div id="1102">
-                    <h3>Razones</h3>
-                    <p></p>
-                </div>
-                <div id="1103">
-                    <h3>Personalización</h3>
-                    <p></p>
-                </div>
-                <h2>Configuración</h2>
-                <div id="1201">
-                    <h3>Inicio</h3>
-                    <p></p>
-                </div>
-                <div id="1202">
-                    <h3>Función de canales</h3>
-                    <p></p>
-                </div>
-                <div id="1203">
-                    <h3>Gestión de usuarios</h3>
-                    <p></p>
-                </div>
-                <div id="1204">
-                    <h3>Gestión de roles</h3>
-                    <p></p>
-                </div>
-                <div id="1205">
-                    <h3>Dashboard</h3>
-                    <p></p>
-                </div>
-                <h2>Gestión del servidor</h2>
-                <div id="1301">
-                    <h3>Funcionamiento</h3>
-                    <p></p>
-                </div>
-                <div id="1302">
-                    <h3>Servicios</h3>
-                    <p></p>
-                </div>
-                <h2>Seguridad</h2>
-                <div id="1401">
-                    <h3>Reportar un bug</h3>
-                    <p></p>
-                </div>
-                <div id="1402">
-                    <h3>Nuestras medidas de seguridad</h3>
-                    <p></p>
-                </div>
-                <div id="1403">
-                    <h3>¡Hack me!</h3>
-                    <p></p>
-                </div>
-                <h2>Dashboard</h2>
-                <div id="1501">
-                    <h3>¿Qué es una dashboard?</h3>
-                    <p></p>
-                </div>
-                <div id="1502">
-                    <h3>Acceso a la dashboard</h3>
-                    <p></p>
-                </div>
-                <div id="1503">
-                    <h3>Iniciar sesión</h3>
-                    <p></p>
-                </div>
-                <div id="1504">
-                    <h3>Área personal</h3>
-                    <p></p>
-                </div>
-                <div id="1505">
-                    <h3>Añadir un servidor</h3>
-                    <p></p>
-                </div>
-                <div id="1506">
-                    <h3>Gestionar un servidor</h3>
-                    <p></p>
-                </div>
-                <div id="1507">
-                    <h3>Dejar de gestionar un servidor</h3>
-                    <p></p>
+        </div>
+        <header>
+            <svg viewBox="0 0 100 100">
+                <g>
+                    <path id="path878" style="stroke-width:7.97231;stroke-linecap:round;stroke-linejoin:round" d="M 194.31641 42.142578 A 147.11223 147.0457 0 0 0 47.205078 189.18945 A 147.11223 147.0457 0 0 0 194.31641 336.23438 A 147.11223 147.0457 0 0 0 198.87305 336.16406 L 198.29688 336.06445 C 225.90282 333.81606 255.86011 320.63516 276.78516 301.07227 C 293.70708 285.2519 306.38927 262.62625 309.28516 239.64258 C 312.08618 217.41176 303.99582 194.11958 293.57227 174.28516 C 285.17213 158.30099 258.44533 134.69908 257.375 133.98242 C 256.30467 133.26577 255.29392 133.75244 255.41797 135.61133 C 255.41797 135.61133 255.70989 142.87452 254.96484 146.39453 C 254.16302 150.18269 251.06596 152.53763 249.32031 152.76953 C 248.79974 152.8387 248.05563 152.87522 247.94141 152.49023 C 247.66822 151.56944 248.81621 150.06679 248.58594 146.36133 C 248.40898 143.5137 245.52127 138.90939 244.13477 137.16406 C 241.2591 133.54417 240.32505 132.51639 239.375 131.85352 C 238.68075 131.36912 237.16885 130.9228 236.44531 132.89844 C 235.01634 136.80026 230.29974 151.51323 222.04492 154.2207 C 209.83535 158.22528 203.45469 163.95437 197.57227 172.18945 C 194.37889 176.66001 193.19278 182.45261 192.65234 187.91992 C 192.17113 192.78811 193.44577 196.15863 194.20508 202.51367 C 194.63656 206.12494 188.82138 217.70284 186.94922 218.55859 C 188.77622 221.63684 195.06363 232.86699 200.95508 235.63477 C 210.56882 240.15126 222.44108 237.59025 232.81836 235.32422 C 239.20445 233.92972 247.83803 228.9592 250.72266 227.32422 C 253.60728 225.68924 253.53667 227.84929 252.68359 228.71484 C 251.83052 229.5804 245.66109 236.54422 241.08594 238.89648 C 229.08652 245.06584 215.12409 247.10979 201.66797 248.09961 C 187.29847 249.15661 172.99521 244.24542 158.58984 244.53711 C 148.02189 244.75111 137.12772 245.02837 127.11914 248.42773 C 116.28677 252.1069 97.539063 265.83203 97.539062 265.83203 C 75.79123 243.24725 70.683014 213.9284 69.824219 185.66797 C 69.18247 164.54997 76.582382 143.07701 86.859375 124.61719 C 94.348819 111.16445 105.93354 100.01579 118.13672 90.626953 C 131.39631 80.425343 146.3277 71.346357 162.54688 67.244141 C 182.12239 62.293024 203.42841 62.116936 223.11914 66.587891 C 240.85547 70.615079 257.77881 79.437229 272.07422 90.681641 C 284.17113 100.19677 299.23257 122.87949 301.64844 126.14062 C 304.06431 129.40176 311.13633 134.10605 316.95117 135.49609 C 320.7909 136.41399 327.72034 135.24466 330.91992 134.60938 A 147.11223 147.0457 0 0 0 194.31641 42.142578 z " transform="scale(0.26458333)" />
+                </g>
+            </svg>
+            <h1>Catto help center</h1>
+            <button class="tooltip" onclick="openSearcher()">
+                <svg viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M14.71 14h.79l4.99 5L19 20.49l-5-4.99v-.79l-.27-.28A6.471 6.471 0 0 1 9.5 16 6.5 6.5 0 1 1 16 9.5c0 1.61-.59 3.09-1.57 4.23l.28.27ZM5 9.5C5 11.99 7.01 14 9.5 14S14 11.99 14 9.5 11.99 5 9.5 5 5 7.01 5 9.5Z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="tooltiptext">Buscar</span>
+            </button>
+        </header>
+        <div class="content">
+            <div>
+
+            </div>
+            <div>
+                <div class="sliders">
+                    <div>
+                        <h3>Guardados</h3>
+                        <div class="slider" id="saved">
+
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Selección de los desarrolladores</h3>
+                        <div class="slider" id="developers">
+
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Nuevo</h3>
+                        <div class="slider" id="nuevo">
+
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Destacados</h3>
+                        <div class="slider" id="destacados">
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
