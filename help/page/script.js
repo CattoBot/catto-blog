@@ -36,10 +36,10 @@ async function loadcontent() {
     const content = document.getElementById("content")
     content.innerHTML = `<h1>${item.title}</h1>`
     item.content.forEach(e => {
-        if (e.type == "text") content.innerHTML += `<p>${e.text.replace(/\\n+/g, "<br>")}</p>`
-        if (e.type == "title") content.innerHTML += `<h3>${e.text.replace(/\\n+/g, "<br>")}</h3>`
-        if (e.type == "img") content.innerHTML += `<img src="${e.src}" alt="${e.alt.replace(/\\n+/g, "<br>")}">`
-        if (e.type == "a") content.innerHTML += `<a href="${e.href}" target="${e.target}">${e.text.replace(/\\n+/g, "<br>")}</p>`
+        if (e.type == "text") content.innerHTML += `<p>${e.text.replace(/\n+/g, "<br>")}</p>`
+        if (e.type == "title") content.innerHTML += `<h3>${e.text.replace(/\n+/g, "<br>")}</h3>`
+        if (e.type == "img") content.innerHTML += `<img src="${e.src}" alt="${e.alt.replace(/\n+/g, "<br>")}">`
+        if (e.type == "a") content.innerHTML += `<a href="${e.href}" target="${e.target}">${e.text.replace(/\n+/g, "<br>")}</p>`
         if (e.type == "actionRow") {
             // FALTA HACERLO
         }
@@ -63,11 +63,8 @@ async function loadChecked() {
     return new Promise(async function (resolve, reject) {
         const id = window.location.href.split("?")[1]
         let exist = await indexedDB.has("saved", id)
-        if (exist) {
-            document.getElementById("saveCheck").checked = true
-        } else {
-            document.getElementById("saveCheck").checked = false
-        }
+        if (exist) document.getElementById("saveCheck").checked = true
+        else document.getElementById("saveCheck").checked = false
         updateSaved()
         resolve()
     })

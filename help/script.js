@@ -131,7 +131,7 @@ async function loadHome() {
 
     var nv = document.getElementById("nuevo")
     nv.innerHTML = ""
-    filtered = content.help.filter(e=>e.updates[e.updates.length-1].unix < Math.floor(Date.now() - (3600*24*7)))
+    filtered = content.help.filter(e=>e.updates[e.updates.length-1].unix > Math.floor((Date.now()/1000) - (3600*24*7)))
     if (filtered.length>0) {
         filtered.forEach(item => {
             buildCard(item.id, item.title, item.description, item.updates[item.updates.length - 1].unix, nv)
