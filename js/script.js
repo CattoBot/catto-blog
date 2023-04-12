@@ -132,9 +132,16 @@ async function loadHome() {
     var nv = document.getElementById("nuevo")
     nv.innerHTML = ""
     filtered = content.help.filter(e=>e.updates[e.updates.length-1].unix > Math.floor((Date.now()/1000) - (3600*24*7)))
+    filtered.sort(function(a,b){
+        if (a.updates[a.updates.length-1].unix > b.updates[b.updates.length-1].unix) return -1;
+        if (a.updates[a.updates.length-1].unix < b.updates[b.updates.length-1].unix) return 1;
+        return 0
+    })
     if (filtered.length>0) {
+        let i = 0
         filtered.forEach(item => {
-            buildCard(item.id, item.title, item.description, item.updates[item.updates.length - 1].unix, nv)
+            if (i<5) buildCard(item.id, item.title, item.description, item.updates[item.updates.length - 1].unix, nv)
+            i++
         })
     } else {
         nv.innerHTML = "<p>¡No hay nada por aquí!</p>"

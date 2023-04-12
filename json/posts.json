@@ -221,11 +221,68 @@
             },
             "updates": [
                 {
-                    "description": "",
-                    "unix": ""
+                    "description": "Creación del post",
+                    "unix": "1681333387"
                 }
             ],
-            "content": []
+            "content": [
+                {
+                    "type": "text",
+                    "text": "Querido pasajero, gracias por escoger nuestra compañía para realizar este viaje por el mundo de las interacciones. En esta ocasión, nos adentraremos en el país comandos. Descubriremos los avanzados y complejos comandos slash y los simples pero útiles comandos de menú."
+                },
+                {
+                    "type": "text",
+                    "text": "Antes de adentrarnos en este territorio, hablemos de él."
+                },
+                {
+                    "type": "text",
+                    "text": "Los comandos, sus habitantes, son herramientas que los desarrolladores declaramos en un bot, es decir, lo dejamos registrado, y los usuarios pueden usarlas. A su derecha, tenemos alguno de los comandos de Catto, el comando slash <span class=\"codeuniline\">/xp rank</span> o <span class=\"codeuniline\">/mod vc manage</span>.\nPodrá ver la lista de comandos de cada bot siguiendo los siguientes pasos:"
+                },
+                {
+                    "type": "text",
+                    "text": "<ul><li><p><b>Comandos slash:</b> Diríjase a la barra de texto de Discord y escriba <span class=\"codeuniline\">/</span>. Se mostrará una lista de los comandos slash que puedes usar en ese chat.</p></li><li><p><b>Comandos de menú:</b> Haga click derecho sobre un mensaje o foto de perfil de un usuario y busque <i>\"Aplicaciones\"</i>, encontrará una lista de los comandos de menú disponibles.</p>Si en este caso no se ve la opción <i>\"Aplicaciones\"</i>, no hay ningún comando de menú disponible.\nSi te encuentras en un dispositivo móvil se puede acceder a estas funciones seleccionando por un largo tiempo un mensaje o accediendo al perfil de un usuario al hacer click en su foto de perfil.</li></ul>"
+                },
+                {
+                    "type": "title",
+                    "text": "Comandos Slash (/)"
+                },
+                {
+                    "type": "text",
+                    "text": "Le damos la bienvenida a la provincia de los comandos slash, territorio de los variados comandos slash que hacen un gran trabajo a diario.\nEllos sólos leen cada una de las peticiones de los usuarios, la procesan y le contestan, haciendo el trabajo duro de decenas, cientos o miles de peticiones."
+                },
+                {
+                    "type": "text",
+                    "text": "Estos comandos te permiten introducir texto, números, usuarios, roles...\nEstos lugares en los que puedes introducir estos datos se llaman <i>\"campos\"</i>, y pueden ser obligatorios u opcionales, Discord te hará saber si se te olvidó rellenar un campo obligatorio."
+                },
+                {
+                    "type": "text",
+                    "text": "¡Ahora que conoces a los comandos slash, te animamos a interactuar con ellos!\nDirígete a un servidor y prueba a escribir <span class=\"codeuniline\">/</span>"
+                },
+                {
+                    "type": "title",
+                    "text": "Comandos de Menú (contextMenu)"
+                },
+                {
+                    "type": "text",
+                    "text": "Estos simples pero observadores habitantes no pueden pedirte ningún dato, pero son usados sobre usuarios o mensajes. Algunos se especializan en usuarios, otros en mensajes, y cada uno de ellos investiga y obtiene toda la información posible de su objetivo."
+                },
+                {
+                    "type": "text",
+                    "text": "No han doxxeado aún a nadie, pero son acosadores natos. Desde la fecha en la que te uniste a Discord hasta el último mensaje que enviaste en el servidor, estos comandos lo saben todo sobre su objetivo, pero sus conocimientos con empleados para el bien, y en muchos casos, simplemente se le muestra esta información al staff del servidor para que puedan identificar a usuarios conflictivos."
+                },
+                {
+                    "type": "title",
+                    "text": "La despedida"
+                },
+                {
+                    "type": "text",
+                    "text": "Debemos despedirnos ya de este país, dejaremos a los comandos trabajar haciendo que nuestros bots favoritos funcionen como los conocemos hoy en día."
+                },
+                {
+                    "type": "text",
+                    "text": "¿Quieres saber más a cerca de los comandos? ¡Háznoslo saber en nuestro servidor <a href=\"https://discord.com/invite/TqUM6aCKUQ\" target=\"blank_\">Catto Support</a>!"
+                }
+            ]
         },
         {
             "title": "¿Cómo invitar al bot?",
@@ -239,11 +296,28 @@
             },
             "updates": [
                 {
-                    "description": "",
-                    "unix": ""
+                    "description": "Creación del post",
+                    "unix": "1681334720"
                 }
             ],
-            "content": []
+            "content": [
+                {
+                    "type": "text",
+                    "text": "Tenemos malas noticias...\nNo vamos a poder ayudarte con este problema  D:"
+                },
+                {
+                    "type": "text",
+                    "text": "Catto actualmente no se encuentra disponible al público, para poder invitar a Catto tendrás que unirte a los <a href=\"./?catto-testers\">Catto Testers</a> y conseguir la aprobación de los desarrolladores."
+                },
+                {
+                    "type": "text",
+                    "text": "Necesitarás cumplir una serie de requisitos mínimos y aceptar unas ciertas condiciones impuestas por los desarrolladores."
+                },
+                {
+                    "type": "text",
+                    "text": "¿Aún tienes dudas? Cuéntanoslas en nuestro servidor <a href=\"https://discord.com/invite/TqUM6aCKUQ\" target=\"blank_\">Catto Support</a>"
+                }
+            ]
         },
         {
             "title": "",

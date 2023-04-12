@@ -17,7 +17,11 @@ async function loadcontent() {
     const jsonContent = await require("./json/posts.json", true)
     const item = jsonContent.help.filter(item => item.id == id)[0]
 
+    document.title = "ERROR"
+
     if (!item) return document.getElementById("secondInfoColumn").style.opacity = 0
+
+    document.title = item.title
 
     const labels = document.getElementById("labels")
     labels.innerHTML = `<li>${item.labels.join("</li><li>")}</li>`

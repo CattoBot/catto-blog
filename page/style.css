@@ -249,3 +249,12 @@ div.buttons label.saveLabel.checked input::before {
     content: '¡Guardado!';
     font-weight: bold;
 }
+
+body p span.codeuniline {
+    background-color: #d7d7d7;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 2.5px;
+    color: #000;
+    white-space: nowrap;
+}
